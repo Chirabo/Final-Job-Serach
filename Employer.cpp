@@ -133,4 +133,5 @@ void Employer::manage_jobs() {
             application_array[i].display_application();
         }
     }
-    
+
+   // hi im shira
