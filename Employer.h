@@ -14,19 +14,16 @@ class Employer : public User {
 private:
     vector<Jobs> jobs;
     vector<Application> applications;
-    Jobs* published_jobs;
-    Application* application_array;
-    int job_count;
-    int application_count;
 
 public:
-    Employer(const string &id, const string &name, const string &password, const string &email);
-    bool login (string input_id , const string input_password) ;
+    Employer(const string first_name, const string last_name, const string id,const string password, const string email);
+    bool login (string input_id ,  string input_password) ;
     void employer_menu();
     void post_jobs();
     void view_published_jobs() const;
     void manage_jobs();
-    void view_applications();
+    void view_applications()const;
+
 
 };
 

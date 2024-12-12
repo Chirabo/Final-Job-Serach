@@ -20,9 +20,8 @@ public:
     string get_password() {return password;}
     string get_email() {return email;}
     virtual bool login (string id, const string password)=0;
-    virtual void regist()=0;
+   // virtual void register()=0;
     virtual void display_details() const;
-    virtual ~User();
 };
 
 

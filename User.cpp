@@ -36,6 +36,4 @@ void User :: display_details() const {
     cout << "Password:" << password << endl;
     cout << "Email:" << email << endl;
 }
-User::~User(){}
-
 
