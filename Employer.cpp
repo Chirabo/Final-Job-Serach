@@ -134,4 +134,3 @@ void Employer::manage_jobs() {
         }
     }
 
-   // hi im shira
