@@ -13,4 +13,5 @@ add_executable(jobSearch
         Jobs.cpp
         Jobs.h
         Application.cpp
-        Application.h)
+        Application.h
+        main.cpp)
