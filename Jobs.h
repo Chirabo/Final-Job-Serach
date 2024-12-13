@@ -39,7 +39,7 @@ public:
     Jobs create_job();
     void view_all_jobs();
     void delete_job ( Jobs *job , int &current_size , int index);
-    void add_application()
+    void add_application();
     friend ostream &operator << (ostream &os , const Jobs &j){
         os << "Location:" << j.location << ", Profession: " << j.profession << ", Job Type : " << j.job_type;
         return os;}
