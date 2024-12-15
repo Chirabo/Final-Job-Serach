@@ -12,16 +12,19 @@ class Employer;
 
 class Application {
 private:
-    Jobs *job;
-    Candidate* candidate;
-    Employer* employer;
-    string status;
-//status...
+    string candidate_first_name;
+    string candidate_last_name;
+    string candidate_id;
+    string candidate_email;
+    string candidate_phone_number;
+    string resume;
 public:
-    Application(Jobs *jobs1, Candidate *candidate1, Employer *employer1, string &status1);
-    void update_status(const string& new_status);
-    string get_status();
-    void display_application() const;
+    Application();
+    Application(string candidate_first_name, string candidate_last_name, string candidate_id, string candidate_email,string candidate_phone_number,string resume);
+    void set_application ( string candidate_first_name , string candidate_last_name , string candidate_id , string candidate_email , string candidate_phone_number , string resume);
+    void display_application();
+
+
 };
 
 

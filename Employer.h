@@ -9,6 +9,7 @@
 #include "Application.h"
 #include <string>
 #include <vector>
+#define MAX_APPLICATIONS 5
 
 class Employer : public User {
 private:
@@ -16,13 +17,16 @@ private:
     vector<Application> applications;
 
 public:
-    Employer(const string first_name, const string last_name, const string id,const string password, const string email);
+    Employer(string first_name, string last_name, string id,string password, string email);
     bool login (string input_id ,  string input_password) ;
+    //void savetofile (const string &filename);
+    //static vector<Employer> loadfromfile(const string &filename);
     void employer_menu();
     void post_jobs();
     void view_published_jobs() const;
     void manage_jobs();
     void view_applications()const;
+    ~Employer(){};
 
 
 };

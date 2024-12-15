@@ -10,8 +10,9 @@ using namespace std;
 #include "Employer.h"
 
 
-Employer::Employer(const string first_name, const string last_name, const string id,const string password, const string email): User(first_name,last_name,id,password,email)
-{}
+Employer::Employer(string first_name, string last_name, string id,string password, string email): User(first_name,last_name,id,password,email)
+{
+}
 
 
 bool Employer::login(string input_id, const string input_password)
@@ -25,7 +26,43 @@ bool Employer::login(string input_id, const string input_password)
         return false;
     }
 }
+/*
+void Employer::savetofile(const std::string &filename) {
+    ofstream outfile(filename, ios::app);
+    if (!outfile.is_open()){
+        cout << "Error: Could not open file " << filename << " for writing." << endl;
+        return;
+    }
+    outfile << first_name << "," << last_name << "," << id << "," << password << "," << email << endl;
+    outfile.close();
+    cout << "Employer saved to file successfully." << endl;
 
+}
+ */
+
+/*
+vector<Employer> Employer::loadfromfile(const std::string &filename) {
+    vector<Employer>employers;//create vector array of employers from employer type
+    ifstream infile(filename);
+    if (!infile.is_open()){
+        cout << "Error: Could not open file " << filename << " for reading." << endl;
+        return employers;
+    }
+    string line; // create temp line
+    while (getline(infile,line)){
+        stringstream x(line);//stringstream sort sentences by key like ,
+        string first_name, last_name, id, password, email;
+        getline(x, first_name, ',');
+        getline(x, last_name, ',');
+        getline(x, id, ',');
+        getline(x, password, ',');
+        getline(x, email, ',');
+        employers.emplace_back(first_name,last_name,id,password,email);
+    }
+    infile.close();
+    return employers;
+}
+ */
 void Employer::employer_menu() {
     int choice;
     bool run = true;
@@ -122,7 +159,7 @@ void Employer::manage_jobs() {
     }
 }
 
-
+/*
 void Employer::view_applications()const {
     if ( applications.size() == 0) {
         cout << "There is no job applications! " << endl;
@@ -134,4 +171,4 @@ void Employer::view_applications()const {
         applications[i].display_application();
     }
 }
-
+*/

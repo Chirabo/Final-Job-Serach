@@ -18,7 +18,7 @@ User::User(string first_name, string last_name, string id, string password, stri
     this->email = email;
 }
 
-bool User :: login (string input_id , const string input_password){
+bool User :: login (string input_id , const string input_password) {
     if ( id == input_id && password == input_password) {
         cout << "Login successfully!" << endl;
         return true;
@@ -37,3 +37,4 @@ void User :: display_details() const {
     cout << "Email:" << email << endl;
 }
 
+User :: ~User(){}
