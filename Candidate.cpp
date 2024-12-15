@@ -162,8 +162,24 @@ void Candidate::view_favorites() const {
     }
 }
 
+<<<<<<< Updated upstream
 void Candidate::view_application_history() {
     if (app_history.empty()) {
+=======
+void Candidate ::add_application(const Jobs &job) {
+    Application application = (job, *this, )
+    app_history.push_back(job);
+    cout << "Favorites Jobs: " << endl;
+    for (int i = 0; i < favorites.size(); ++i) {
+        cout << i + 1 << ") ";
+        favorites[i].display_jobs();
+        cout << endl;
+    }
+}
+/*
+void Candidate ::view_application_history() {
+    if ( app_history.empty()){
+>>>>>>> Stashed changes
         cout << "No application history yet." << endl;
         return;
     } else {

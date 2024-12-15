@@ -1,3 +1,9 @@
+<<<<<<< Updated upstream
 C:/Users/bensi/Documents/GitHub/Final-Job-Serach/cmake-build-debug/CMakeFiles/jobSearch.dir
 C:/Users/bensi/Documents/GitHub/Final-Job-Serach/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/bensi/Documents/GitHub/Final-Job-Serach/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+=======
+C:/Users/Shira/CLionProjects/jobSearch/Final-Job-Serach/cmake-build-debug/CMakeFiles/jobSearch.dir
+C:/Users/Shira/CLionProjects/jobSearch/Final-Job-Serach/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Shira/CLionProjects/jobSearch/Final-Job-Serach/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+>>>>>>> Stashed changes

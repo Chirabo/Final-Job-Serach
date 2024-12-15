@@ -200,7 +200,20 @@ vector<Jobs> Jobs::search_jobs() {
                     if (match)
                         results.push_back(job);
                 }
+<<<<<<< Updated upstream
                 return results;
+=======
+                if (results.empty()) {
+                    cout << "No jobs match the given criteria." << endl;
+                } else {
+                    cout << "Matching jobs:" << endl;
+                    for (int i = 0; i < results.size(); ++i) {
+                        results[i].display_jobs();
+                        cout << "----------------------" << endl;
+
+                    }
+                    cout << "Do you want ";
+>>>>>>> Stashed changes
                 }
             case 6 : {
                 cout << "Goodbye!" << endl;
